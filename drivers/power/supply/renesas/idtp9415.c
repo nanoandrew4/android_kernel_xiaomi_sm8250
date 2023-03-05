@@ -22,8 +22,6 @@
 
 /* add for run ln8282 func*/
 #include <linux/power/ln8282.h>
-/* add for get hw country */
-#include <soc/qcom/socinfo.h>
 /*
 #ifdef CONFIG_DRM
 #include <drm/drm_notifier.h>
@@ -5242,12 +5240,7 @@ static struct i2c_driver idtp9220_driver = {
 static int __init idt_init(void)
 {
 	int ret;
-	uint32_t hw_version = 0;
 
-	hw_version = get_hw_version_platform();
-	printk("idtp9415: hw version: %d\n", hw_version);
-	if (hw_version == HARDWARE_PLATFORM_SKULD)
-		return 0;
 #ifndef CONFIG_RX1619_REMOVE
 	printk("is_idt_rx flag is:%d\n", is_idt_rx);
 #endif
