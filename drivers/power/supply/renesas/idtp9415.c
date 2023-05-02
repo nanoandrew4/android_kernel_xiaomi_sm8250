@@ -19,6 +19,7 @@
 #include <linux/power_supply.h>
 #include <linux/memory.h>
 #include <linux/pmic-voter.h>
+#include <soc/qcom/socinfo.h>
 
 /* add for run ln8282 func*/
 #include <linux/power/ln8282.h>
