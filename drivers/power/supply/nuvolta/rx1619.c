@@ -27,7 +27,7 @@
 #include <linux/ioctl.h>
 #include <asm/uaccess.h>
 #include <linux/pmic-voter.h>
-//#include <soc/qcom/socinfo.h>
+#include <soc/qcom/socinfo.h>
 #include <linux/power/ln8282.h>
 #include "rx1619.h"
 
