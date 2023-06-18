@@ -1,6 +1,5 @@
 /*
-this file is for attribution only of umi
-And public attribution of xiaomi platforms(like enuma and so and)
+this file is for attribution only of enuma
 */
 
 #include "enuma-pinctrl.dtsi"
@@ -286,7 +285,6 @@ And public attribution of xiaomi platforms(like enuma and so and)
 
 &qupv3_se4_spi {
 	status = "ok";
-	qcom,rt;
 	pinctrl-0 = <&qupv3_se4_spi_active>;
 	pinctrl-1 = <&qupv3_se4_spi_sleep>;
 	novatek@0 {
